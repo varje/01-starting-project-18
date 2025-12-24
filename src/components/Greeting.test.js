@@ -32,6 +32,6 @@ describe('Greeting component', () => {
     const paragraphElement = screen.queryByText('good to see you', {
       exact: false,
     });
-    expect(paragraphElement).not.toBeInTheDocument();
+    expect(paragraphElement).toBeNull();
   });
 });
